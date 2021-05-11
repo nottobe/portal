@@ -29,7 +29,9 @@ app.use(require('method-override')());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/semantic-ui', express.static(path.join(__dirname, '..', 'node_modules', 'semantic-ui-css')));
 
-app.use(session({ secret: config.cookieSecret, cookie: { maxAge: 10 * 60 * 1000 }, resave: false, saveUninitialized: false }));
+app.use(
+  session({ secret: config.cookieSecret, cookie: { maxAge: 10 * 60 * 1000 }, resave: false, saveUninitialized: false }),
+);
 app.use(passport.initialize());
 app.use(passport.session());
 
