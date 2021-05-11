@@ -2,7 +2,7 @@ import {stringifyParams} from 'query'
 import globalStore from 'store'
 import {setAuth, invalidateAccessToken, resetAuth} from 'reducers/auth'
 import {setLogin} from 'reducers/login'
-import config from 'config.json'
+import config from 'config'
 import {create as createPkce} from 'pkce'
 import download from 'downloadjs'
 

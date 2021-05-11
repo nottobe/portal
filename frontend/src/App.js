@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {List, Grid, Container, Menu, Icon, Button, Header, Dropdown} from 'semantic-ui-react'
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 
-import config from 'config.json'
+import config from 'config'
 import styles from './App.module.scss'
 
 import {

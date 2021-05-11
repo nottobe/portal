@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import {FileUploadField, Page} from 'components'
 import type {Track} from 'types'
 import api from 'api'
-import config from '../config.json'
+import config from '../config'
 
 function isSameFile(a: File, b: File) {
   return a.name === b.name && a.size === b.size
